@@ -1,0 +1,238 @@
+/*
+FUNCIONES PRIMARIAS PARA LA WEB
+*/
+
+$primario: #9e0728;
+$secundario: #079e8a;
+$terciario: #520616;
+$color-texto:#303030;
+$font-family-titulo:'Merienda One', cursive; 
+$font-family-text: 'ABeeZee', sans-serif;
+
+
+// CUERPO DE LA WEB
+body{
+    font-family: $font-family-text;
+    font-weight: 300;
+    font-size:16px;
+    color:$color-texto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-family-titulo;
+}
+
+p{
+    font-weight: 300;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+
+
+
+.separador:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../img/dividers/divider_4-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+// HEADER DE LA WEB
+header .franja-logo{
+    z-index: 99;
+    position: relative;
+    background-color: rgb(247, 247, 247);
+}
+
+header .mask-header{
+    mask-image: url(../img/svg/shape_menu_1.svg);
+    mask-position: bottom center;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+}
+
+
+header .img-logo{
+    height: 180px;
+}
+
+header #nav_principal a{
+    font-family: $font-family-titulo;
+    font-size: 1rem;
+}
+
+
+@media (min-width:720px){
+    header #nav_principal a{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:960px){
+    header #nav_principal a{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:1300px){
+    header #nav_principal a{
+        font-size: 1rem;
+    }
+}
+
+
+header .nav-link{
+    color: $primario;
+}
+
+header .nav-link:hover{
+    color:$secundario;
+    border-bottom: 2px solid $secundario;
+}
+
+header .nav-link.active{
+    color:$secundario;
+    border-bottom: none;
+}
+
+header .nav-link.active:before{
+    content: "o";
+    color:$primario;
+    font-size: 0.7em;
+    padding: 0 0.20em;
+}
+
+
+header .social a span{
+    color:$secundario;
+    font-size: 2rem;
+}
+
+
+// CAROUSEL DE LA WEB
+
+.carousel{
+    margin-top: -20px;
+}
+
+.carousel-item img {
+    background-color: #079e8a;
+    margin-top: 0px;
+    display: block;
+    width: 100%;
+    height: 180px;
+  }
+
+
+  @media (min-width:720px){
+    .carousel-item img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (min-width:960px){
+    .carousel-item img {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media (min-width:1300px){
+    .carousel-item img {
+        width: 100%;
+        height: 750px;
+    }
+
+}
+
+  // SECCIOJN DE E3SPECIALIDADES
+
+  .bg-especialidad{
+      background-image: url(../img/fondos/bg_med.jpeg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+
+  }
+
+  .card{
+      background-color: transparent;
+      border: none;
+  }
+
+// PROCESO MARAVILLOSO
+
+.bg-proceso{
+    background-image: url(../img/fondos/fondo-2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    position:relative;
+    z-index: 2;
+    margin-top: -30px;
+}
+
+
+.bg-proceso::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(2, 146, 110, 0.635);
+    z-index:-1;
+  }
+
+.mask-proceso {
+    mask-image: url(../img/svg/style_1_1.svg);
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+.separador-2:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url(../img/dividers/devider_heart.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+@media (min-width:720px){
+    .bg-proceso{
+        height: 600px;
+    }
+
+}
+
+@media (min-width:960px){
+    
+}
+
+@media (min-width:1300px){
+    
+
+}
+
+
+section.bg-proceso h1,
+section.bg-proceso p{
+    color:white;
+}
