@@ -29,18 +29,43 @@ p{
 }
 
 
-
-
 .separador:before{
     content: '';
     display: block;
     width: 100%;
-    height: 100px;
+    height: 170px;
     margin: 0 auto;
     background-image: url(../img/dividers/divider_4-1.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+
+.separador-2:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url(../img/dividers/devider_heart.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+@media (min-width:720px){
+}
+
+@media (min-width:960px){
+}
+
+@media (min-width:1300px){
+
+}
+
+
+
+
 
 
 // HEADER DE LA WEB
@@ -195,6 +220,19 @@ header .social a span{
     z-index:-1;
   }
 
+  .bg-proceso{
+    background-image: url(../img/fondos/fondo-2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    position:relative;
+    z-index: 2;
+    margin-top: -30px;
+}
+
+
 .mask-proceso {
     mask-image: url(../img/svg/style_1_1.svg);
     mask-position: top;
@@ -202,22 +240,11 @@ header .social a span{
     mask-repeat: no-repeat;
 }
 
-.separador-2:before{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 300px;
-    margin: 0 auto;
-    background-image: url(../img/dividers/devider_heart.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
 
 
 @media (min-width:720px){
     .bg-proceso{
-        height: 600px;
+        height: 700px;
     }
 
 }
@@ -236,3 +263,188 @@ section.bg-proceso h1,
 section.bg-proceso p{
     color:white;
 }
+
+// NUESTRAS CREACIONES
+
+.bg-creaciones{
+/*     background-image: url(../img/fondos/fondo-2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
+    width: 100%;
+    height: auto;
+    position:relative;
+    z-index: 2;
+    margin-top: -100px;
+}
+
+
+.bg-creaciones::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255, 255, 255, 1);
+    z-index:-1;
+  }
+
+
+.mask-creaciones{
+    mask-image: url(../img/svg/style_9.svg);
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+
+}
+
+
+.filtermenu {
+	text-align: center;
+
+	 li {
+		border: 1px solid $primario;
+		padding: 4px 12px;
+		display: inline-block;
+		border-radius: 6px;
+		cursor: pointer;
+		 
+		 &.active {
+             background:$secundario;
+             color:white;
+		 }
+	}
+}
+
+// CONOZCANOS MEJOR
+
+.bg-conozcanos{
+    background-image: url(../img/fondos/cupcakes-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 1500px;
+    position:relative;
+    z-index: 2;
+    margin-top: -40px;
+}
+
+
+.mask-conozcanos {
+    mask-image: url(../img/svg/style_1_1.svg);
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+
+.text-conozcanos{
+    padding-top: 60px;
+}
+
+
+.text-conozcanos h4,
+.text-conozcanos p{
+    color:white;
+}
+
+.card-img-conocer{
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+@media (min-width:720px){
+    .bg-conozcanos{
+        height: 1000px;
+    }
+
+    .card-img-conocer{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width:960px){
+    .bg-conozcanos{
+        height: 800px;
+    }
+    
+}
+
+@media (min-width:1300px){
+    
+
+}
+
+// NUESTROS PRECIOS
+
+.img-precio img{
+    background-color: $secundario;
+    border: 8px solid white;
+}
+
+.tit-precio{
+    background-color: $secundario;
+    height: 150px;
+    margin-top: -60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    h3{
+        color:white;
+        font-size: 1.3rem;
+        text-align: center;
+        padding-top:75px;
+    }
+}
+
+
+.contorno-precio{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid $secundario;
+    border-right: 1px solid $secundario;
+    border-bottom: 1px solid $secundario;
+
+    p.linea-abajo {
+        border-bottom: 1px solid $secundario;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.btn-precio{
+    border:2px solid $primario;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    background-color: $primario;
+
+    h5{
+        color:white;
+    }
+
+}
+
+.btn-order{
+    border:2px solid $primario;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+
+    a{
+        font-family: $font-family-titulo;
+        color:$color-texto;
+    }
+}
+
+.btn-order .btn::hover{
+    background-color: $secundario!important;
+}
+
