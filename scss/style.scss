@@ -2,10 +2,10 @@
 FUNCIONES PRIMARIAS PARA LA WEB
 */
 
-$primario: #9e0728;
-$secundario: #079e8a;
-$terciario: #520616;
-$color-texto:#303030;
+$primario: #ea008b;
+$secundario: #11b8b2;
+$terciario: #bdd52f;
+$color-texto:#551e10;
 $font-family-titulo:'Merienda One', cursive; 
 $font-family-text: 'ABeeZee', sans-serif;
 
@@ -48,6 +48,16 @@ p{
     height: 300px;
     margin: 0 auto;
     background-image: url(../img/dividers/devider_heart.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.separador-3:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/dividers/divider_7.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -192,7 +202,28 @@ header .social a span{
   .card{
       background-color: transparent;
       border: none;
+
+      img{
+          width: 50%;
+          height: auto;
+          margin: auto;
+      }
   }
+
+  
+  @media (min-width:720px){
+}
+
+@media (min-width:960px){
+    .card img{
+        width: 80%;
+    }
+}
+
+@media (min-width:1300px){
+
+}
+  
 
 // PROCESO MARAVILLOSO
 
@@ -220,26 +251,12 @@ header .social a span{
     z-index:-1;
   }
 
-  .bg-proceso{
-    background-image: url(../img/fondos/fondo-2.jpeg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 900px;
-    position:relative;
-    z-index: 2;
-    margin-top: -30px;
-}
-
-
 .mask-proceso {
     mask-image: url(../img/svg/style_1_1.svg);
     mask-position: top;
     mask-size: cover;
     mask-repeat: no-repeat;
 }
-
 
 
 @media (min-width:720px){
@@ -325,10 +342,14 @@ section.bg-proceso p{
     background-position: center center;
     background-size: cover;
     width: 100%;
-    height: 1500px;
+    height: 1450px;
     position:relative;
     z-index: 2;
-    margin-top: -40px;
+    margin-top: 0px;
+
+    a{
+        margin-bottom: 100m px;
+    }
 }
 
 
@@ -350,7 +371,7 @@ section.bg-proceso p{
     color:white;
 }
 
-.card-img-conocer{
+img.card-img-conocer{
     width: 25%;
     height: auto;
     margin: 0 auto;
@@ -359,10 +380,10 @@ section.bg-proceso p{
 
 @media (min-width:720px){
     .bg-conozcanos{
-        height: 1000px;
+        height: 950px;
     }
 
-    .card-img-conocer{
+    img.card-img-conocer{
         width: 50%;
         height: auto;
         margin: 0 auto;
@@ -372,7 +393,7 @@ section.bg-proceso p{
 
 @media (min-width:960px){
     .bg-conozcanos{
-        height: 800px;
+        height: 700px;
     }
     
 }
@@ -383,6 +404,26 @@ section.bg-proceso p{
 }
 
 // NUESTROS PRECIOS
+
+.bg-precios{
+    background-color:white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position:relative;
+    z-index: 5;
+    margin-top: -65px;
+}
+
+
+.mask-precios {
+    mask-image: url(../img/svg/style_9.svg);
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
 
 .img-precio img{
     background-color: $secundario;
@@ -405,12 +446,13 @@ section.bg-proceso p{
 }
 
 
+
 .contorno-precio{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-left: 1px solid $secundario;
-    border-right: 1px solid $secundario;
-    border-bottom: 1px solid $secundario;
+    border-left: 3px solid $secundario;
+    border-right: 3px solid $secundario;
+    border-bottom: 3px solid $secundario;
 
     p.linea-abajo {
         border-bottom: 1px solid $secundario;
@@ -432,19 +474,140 @@ section.bg-proceso p{
 
 }
 
-.btn-order{
-    border:2px solid $primario;
-    border-radius: 10px;
-    width: 80%;
-    margin: auto;
+.contorno-precio button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-    a{
-        font-family: $font-family-titulo;
-        color:$color-texto;
+
+
+@media (min-width:720px){
+}
+
+@media (min-width:960px){
+}
+
+@media (min-width:1300px){
+}
+
+// SECCION '\f23c'
+
+.bg-footer{
+    background-image: url(../img/fondos/cupckes-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position:relative;
+    z-index: 2;
+    margin-top: 0px;
+}
+
+
+.bg-footer::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(20, 6, 2, 0.7);
+    z-index:-1;
+  }
+
+
+.mask-footer {
+    mask-image: url(../img/svg/style_1_1.svg);
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+.row-social{
+    margin-top: 50px;
+    color:white;
+
+}
+
+.social-footer a span{
+    color:white;
+    font-size: 2rem;
+}
+
+.row-logo{
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.row-buscar{
+    margin-top: 50px;
+    
+}
+
+
+@media (min-width:720px){
+    .row-social{
+        margin-top: 100px;
+    }
+
+    .social-footer a span{
+        font-size: 2rem;
+    }
+
+    .row-logo{
+        margin-top: 80px;
+    }
+
+    .row-buscar{
+        margin-top: 150px;
+    }
+    
+}
+
+@media (min-width:960px){
+    .row-social{
+        margin-top: 100px;
+    }
+
+    .social-footer a span{
+        font-size: 2rem;
+    }
+
+    .row-logo{
+        margin-top: 60px;
+    }
+
+    .row-buscar{
+        margin-top: 170px;
+        
+        .form-inline{
+        display: inline-flex;
+        }
+    }
+  
+}
+
+@media (min-width:1300px){
+    .row-social{
+        margin-top: 100px;
+    }
+
+    .social-footer a span{
+        font-size: 3rem;
+    }
+
+    .row-buscar{
+        margin-top: 190px;
     }
 }
 
-.btn-order .btn::hover{
-    background-color: $secundario!important;
-}
 
+.copyright{
+    text-align: center;
+    color:white;
+
+    a{
+        color:white;
+    }
+}
