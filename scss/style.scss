@@ -28,7 +28,6 @@ p{
     font-size: 1.1rem;
 }
 
-
 .separador:before{
     content: '';
     display: block;
@@ -52,14 +51,15 @@ p{
     background-position: center center;
 }
 
-.separador-3:after{
+.separador-3:before{
     content: '';
     display: block;
     width: 100%;
-    height: 100px;
+    height: 45px;
     background-image: url(../img/dividers/divider_7.png);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 25%;
 }
 
 
@@ -187,7 +187,18 @@ header .social a span{
 
 }
 
-  // SECCIOJN DE E3SPECIALIDADES
+// SECCION CAROUSEL
+.carousel{
+}
+
+.mask-fondo{
+    mask-image: url(../img/svg/shape_menu_1.svg);
+    mask-position: bottom center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+}
+
+  // SECCION DE E3SPECIALIDADES
 
   .bg-especialidad{
       background-image: url(../img/fondos/bg_med.jpeg);
@@ -196,6 +207,7 @@ header .social a span{
       background-size: cover;
       width: 100%;
       height: auto;
+      margin-top: -80px;
 
   }
 
@@ -362,7 +374,7 @@ section.bg-proceso p{
 
 
 .text-conozcanos{
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 
@@ -384,16 +396,13 @@ img.card-img-conocer{
     }
 
     img.card-img-conocer{
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
     }
 
 }
 
 @media (min-width:960px){
     .bg-conozcanos{
-        height: 700px;
+        height: 600px;
     }
     
 }
@@ -490,7 +499,10 @@ img.card-img-conocer{
 @media (min-width:1300px){
 }
 
-// SECCION '\f23c'
+
+
+// APLICABLE A TODAS LAS HOJAS
+// SECCION FOOTER
 
 .bg-footer{
     background-image: url(../img/fondos/cupckes-1.jpeg);
@@ -602,12 +614,99 @@ img.card-img-conocer{
     }
 }
 
+footer .barra-footer{
+    background-color: rgba(14, 3, 1, 0.9);
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
-.copyright{
+footer div,
+footer div a{
     text-align: center;
     color:white;
+}
 
+
+
+/* variable */
+
+/* scss-file */
+
+*, body *{
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+#floating-action-button{
+  position: fixed;
+  bottom: 1vh;
+  right: 1vw;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 60px;
+  max-height: 60px;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 100%;
+  
+  cursor: pointer;
+  
+  /* center-flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+  /* material shadow */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
+  &:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  i{
+    font-size: 2rem;
+    color: $color-texto;
+  }
+}
+
+/* DO NOT COPY */
+/* 
+.just-for-codepen{
+    color: #212121;
+    background: linear-gradient(to bottom, #f3e5f5 0%,#f3e5f5 10%,#e1bee7 10%,#e1bee7 20%,#ce93d8 20%,#ce93d8 30%,#ba68c8 30%,#ba68c8 40%,#ab47bc 40%,#ab47bc 50%,#9c27b0 50%,#9c27b0 60%,#8e24aa 60%,#8e24aa 70%,#7b1fa2 70%,#7b1fa2 80%,#6a1b9a 80%,#6a1b9a 90%,#4a148c 90%,#4a148c 100%);
+    height: 100vh;
+    padding: 20vw 20vh;
     a{
-        color:white;
+    color: #212121;
+    text-decoration: none;
+        &:hover{
+            color: #304FFE;
+            text-decoration: underline;
+        }
+    }
+} */
+
+
+
+
+
+
+// NUEVA PAGINA
+// PAGINA DE NOSOTROS
+
+// SECCION DE IMAGEN DE HEADER NO EN FRONT-PAGE
+.bg-fondo{
+    background-image: url(../img/fondo-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-top: -20px;
+
+    h2{
+        padding-top: 250px;
+        font-size: 3rem;
     }
 }
+
+
+
