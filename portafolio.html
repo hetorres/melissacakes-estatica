@@ -31,8 +31,8 @@
                                 </button>
                                 <div id="nav_principal" class="collapse navbar-collapse navbar-light justify-content-center justify-content-lg-center text-center text-uppercase"><!--conenedor collapsado-->
                                     <a href="index.html" class="nav-link">Inicio</a>
-                                    <a href="nosotros.html" class="nav-link active">Nosotros</a>
-                                    <a href="portafolio.html" class="nav-link">Portafolio</a>
+                                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                                    <a href="portafolio.html" class="nav-link active">Portafolio</a>
                                     <a href="blog.html" class="nav-link">Blog</a>
                                     <a href="tienda.html" class="nav-link">Tienda</a>
                                     <a href="contacto.html" class="nav-link">Contacto</a>
@@ -55,89 +55,67 @@
                     </div><!--fin fila logo menu-->
                 </div><!-- fin container-->
             </div><!--Fin container-fluid de logo y menu-->
+
             <div id="floating-action-button">
                 <i class="fas fa-angle-double-up"></i>
-            </div> 
-
-            <div class="container-fluid bg-fondo mask-fondo">
-                <h2 class="text-center">
-                    Nosotros
-                </h2>
-            </div>         
+            </div>                    
 
         </header>
-
-        <!--SECCION NUESTRA HISTORIA-->
-        <div class="container-fluid bg-historia">
-            <div class="container text-center separador">
-                <h2 class="separador-4">Nuestra Historia</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus nostrum consequuntur sed dolore libero. Eligendi corrupti mollitia animi soluta dignissimos temporibus atque libero. Qui facere asperiores repellat rerum dignissimos animi?</p>
-                <a href="#"><button type="button" class="btn btn-info mt-4">Nuestros Servicios</button></a>
+        
+        <!--SECCION DEL PORTAFOLIO CON FILTRO-->
+        <!--SECCION NUESTRAS CREACIONES-->
+        <section class="container-fluid ">
+            <div class="container text-center separador bg-proceso-texto">
+                <h1 class="mb-5">Nuestras Creaciones</h1>
             </div>
-        </div>
-
-        <!--SECCION NUESTRA MISION-->
-        <section class="container-fluid bg-mision mask-conozcanos">
-            <div class="container text-center">
-                <h2>Nuestra Misión</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora quis quo aut quidem sequi pariatur, accusamus ullam, non eos voluptatibus mollitia. Voluptates, soluta nesciunt non asperiores incidunt voluptatum dolor!</p>
-                <div class="row text-mision">
-                    <div class="col-md-6 col-lg-3 py-3 px-1">
-                        <div class="card w-100">
-                            <img class="card-img-conocer" src="img/svg/lineal-ribbons.svg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title text-center">Altos estándares</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
+            <div class="container menu-creacion mb-5">
+                <ul class="filtermenu">
+                    <li data-filter="all">Todos</li>
+                    <li data-filter="black">Cumpleaños</li>
+                    <li data-filter="red">Bodas</li>
+                    <li data-filter="blue">Especiales</li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 post red">
+                        <div class="post-thumb my-2"><img class="img-fluid" src="https://placehold.jp/24/cc9999/993333/800x800.png" alt="" /></div>
                     </div>
-                    <div class="col-md-6 col-lg-3 py-3 px-1">
-                        <div class="card w-100">
-                            <img class="card-img-conocer" src="img/svg/cupcake.svg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title text-center">Arduo Trabajo</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
+                    <!-- /post -->
+                    <div class="col-md-6 col-lg-3 post black">
+                        <div class="post-thumb my-2"><img class="img-fluid" src="https://placehold.jp/800x800.png" alt="" /></div>
                     </div>
-                    <div class="col-md-6 col-lg-3 py-3 px-1">
-                        <div class="card w-100">
-                            <img class="card-img-conocer" src="img/svg/pie.svg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title text-center">Experiencia</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
+                    <!-- /post -->
+                    <div class="col-md-6 col-lg-3 post black">
+                        <div class="post-thumb my-2"><img class="img-fluid" src="https://placehold.jp/800x800.png" alt="" /></div>
                     </div>
-                    <div class="col-md-6 col-lg-3 py-3 px-1">
-                        <div class="card w-100">
-                            <img class="card-img-conocer" src="img/svg/pasion-2.svg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title text-center">Responsabilidad</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
+                    <!-- /post -->
+                    <div class="col-md-6 col-lg-3 post blue">
+                        <div class="post-thumb my-2"><img class="img-fluid" src="https://placehold.jp/24/2c66c3/ffffff/800x800.png" alt="" /></div>
                     </div>
+                    <!-- /post -->
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 post black">
+                        <div class="post-thumb my-2"><img class="img-fluid" src="https://placehold.jp/800x800.png" alt="" /></div>
+                    </div>
+                    <!-- /post -->
+                    <div class="col-md-6 col-lg-3 post blue">
+                        <div class="post-thumb my-2"><img class="img-fluid" src="https://placehold.jp/24/2c66c3/ffffff/800x800.png" alt="" /></div>
+                    </div>
+                    <!-- /post -->
+                    <div class="col-md-6 col-lg-3 post blue">
+                        <div class="post-thumb my-2"><img class="img-fluid" src="https://placehold.jp/24/2c66c3/ffffff/800x800.png" alt="" /></div>
+                    </div>
+                    <!-- /post -->
+                    <div class="col-md-6 col-lg-3 post red">
+                        <div class="post-thumb my-2"><img class="img-fluid" src="https://placehold.jp/24/cc9999/993333/800x800.png" alt="" /></div>
+                    </div>
+                    <!-- /post -->
                 </div>
             </div>
         </section>
 
-        <!--NUESTRA PANADERIA-->
-        <section class="container-fluid bg-panaderia mask-panaderia">
-            <div class="container text-center">
-                <h2>Nuestra Panadería</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis eveniet iure veritatis dolorum rerum sequi repudiandae cupiditate, reprehenderit voluptates aliquid architecto illo deserunt atque eligendi facere beatae maxime accusantium?</p>
-            </div>
-        </section>
 
-  
-
-
-
-
-
-
-        <!--FOOTER-->
+                <!--FOOTER-->
         <footer class="container-fluid bg-footer mask-footer">
             <div class="container">
                 <div class="row">

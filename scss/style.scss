@@ -78,6 +78,28 @@ p{
 }
 
 
+.separador-5:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/dividers/divider_17.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.separador-6:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-image: url(../img/dividers/divider_17.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: -41px;
+}
+
 
 @media (min-width:720px){
 }
@@ -204,8 +226,6 @@ header .social a span{
 }
 
 // SECCION CAROUSEL
-.carousel{
-}
 
 .mask-fondo{
     mask-image: url(../img/svg/shape_menu_1.svg);
@@ -412,6 +432,7 @@ img.card-img-conocer{
     }
 
     img.card-img-conocer{
+        width: 20%;
     }
 
 }
@@ -419,6 +440,10 @@ img.card-img-conocer{
 @media (min-width:960px){
     .bg-conozcanos{
         height: 600px;
+    }
+
+    img.card-img-conocer{
+        width: 25%;
     }
     
 }
@@ -725,6 +750,7 @@ footer div a{
 }
 
 
+// SECCION NUESTRA HISTORIA
 .bg-historia{
     background-image: url(../img/fondos/08_bg_01.jpeg);
     background-repeat: no-repeat;
@@ -785,8 +811,9 @@ footer div a{
 }
 
 
+// SECCION NUESTRA MISION
 .bg-mision{
-    background-image: url(../img/fondos/fondo-2.jpeg);
+    background-image: url(../img/fondos/fondo-1.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -814,7 +841,7 @@ footer div a{
     left:0;
     width:100%;
     height:100%;
-    background:rgba(2, 146, 110, 0.635);
+    background:rgba(234, 0, 139, 0.7);
     z-index:-1;
   }
 
@@ -832,7 +859,6 @@ footer div a{
 .text-mision p{
     color:white;
 }
-
 
 @media (min-width:720px){
     .bg-mision{
@@ -852,8 +878,6 @@ footer div a{
 
     }
 
-    .text-mision p{
-    }
 
 }
 
@@ -885,4 +909,244 @@ footer div a{
     }
 }
 
+//SECCION LA PANADERIA
 
+.bg-panaderia{
+    background-image: linear-gradient($color-texto, rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position:relative;
+    z-index: 2;
+    margin-top: -65px;
+}
+
+
+.mask-panaderia {
+    mask-image: url(../img/svg/style_9.svg);
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+.bg-panaderia h2{
+    padding-top: 80px;
+    color: $terciario;
+}
+
+.bg-panaderia p{
+    width: 100%;
+    margin: auto;
+    color:white;
+    padding-top: 30px;
+}
+
+
+@media (min-width:720px){
+    .bg-panaderia h2{
+        color:$terciario;
+        padding-top: 200px;
+    }
+    
+    .bg-panaderia p{
+        width: 70%;
+        margin: auto;
+        color:white;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width:960px){
+}
+
+@media (min-width:1300px){
+}
+
+// SECCION BLOG
+article.post h3{
+    color:$color-texto;
+    
+}
+
+.post-image img{
+    border-radius: 20px;
+}
+
+.post-details{
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .icolor{
+        color:$primario;
+    }
+
+    a, time{
+        color:$secundario;
+    }
+}
+
+
+.post-fecha {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-top: -260px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 100%;
+    background: white;
+    text-align: center;
+    display: table;
+}
+
+.post-fecha time {
+   display: table-cell;
+   vertical-align: middle;
+   font-family: $font-family-titulo;
+   color: $primario;
+   font-size: 20px;
+   line-height: 20px;
+}
+
+.mask-2 {
+    mask-image: url(../img/mascara-2.png);
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+
+
+@media (min-width:720px){
+    .post-fecha{
+        margin-top: -330px;
+    }
+}
+
+@media (min-width:960px){
+    .post-fecha{
+        margin-top: -420px;
+    }
+}
+
+@media (min-width:1300px){
+    .post-fecha{
+        margin-top: -500px;
+    }
+}
+
+// COMENTARIOS
+
+.post-fecha-comment {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 100%;
+    background: white;
+    text-align: center;
+    display: table;
+}
+
+.post-fecha-comment time {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: $font-family-titulo;
+    color: $primario;
+    font-size: 20px;
+    line-height: 20px;
+ }
+ 
+
+.mask-3 {
+    mask-image: url(../img/mascara-2.png);
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+
+@media (min-width:720px){
+    .post-fecha-comment{
+        margin-top: -300px;
+    }
+}
+
+@media (min-width:960px){
+    .post-fecha-comment{
+        margin-top: -400px;
+    }
+}
+
+@media (min-width:1300px){
+    .post-fecha-comment{
+        margin-top: -450px;
+    }
+}
+
+
+
+
+// ASIDE BLOG
+
+// snipper aside search
+#custom-search-input {
+    margin:0;
+    padding: 0;
+}
+
+#custom-search-input .search-query {
+    margin-bottom: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+#custom-search-input button {
+    background-color: $primario;
+    height: 38px;
+    padding: 2px 5px;
+    margin-bottom: 0;
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.search-query:focus + button {
+    z-index: 3;   
+}
+
+// galeria
+.galeria{
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 20px;
+    padding: 15px;
+
+    div.img-col{
+        padding: 2 2 2 2 !important; 
+        
+    }
+}
+
+// categorias
+.categoria, .galeria{
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.bg-cat{
+    background-color: rgb(238, 238, 238);
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px 5px 10px 15px;
+
+    a{
+        color:$secundario;
+    }
+
+}
