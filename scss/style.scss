@@ -133,31 +133,12 @@ header .mask-header{
 
 
 header .img-logo{
-    height: 180px;
+    height: 80px;
 }
 
 header #nav_principal a{
     font-family: $font-family-titulo;
     font-size: 1rem;
-}
-
-
-@media (min-width:720px){
-    header #nav_principal a{
-        font-size: 1rem;
-    }
-}
-
-@media (min-width:960px){
-    header #nav_principal a{
-        font-size: 0.9rem;
-    }
-}
-
-@media (min-width:1300px){
-    header #nav_principal a{
-        font-size: 1rem;
-    }
 }
 
 
@@ -185,8 +166,39 @@ header .nav-link.active:before{
 
 header .social a span{
     color:$secundario;
-    font-size: 2rem;
+    font-size: 1rem;
 }
+
+
+@media (min-width:720px){
+    
+    header .img-logo{
+        height: 180px;
+    }
+
+    header #nav_principal a{
+        font-size: 1rem;
+    }
+
+    
+    header .social a span{
+        color:$secundario;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:960px){
+    header #nav_principal a{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:1300px){
+    header #nav_principal a{
+        font-size: 1rem;
+    }
+}
+
 
 
 // CAROUSEL DE LA WEB
